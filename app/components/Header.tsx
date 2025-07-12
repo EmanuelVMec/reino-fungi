@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-neutral-100 py-6">
+    <div className="bg-neutral-100 py-3">
       <SlideTabs />
     </div>
   );

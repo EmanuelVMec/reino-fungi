@@ -41,6 +41,11 @@ const students = [
     description: "Full-stack developer con interés en startups y productos innovadores.",
     img: "valeria.jpg",
   },
+  {
+    name: "Integrante ultimo",
+    description: "Full-stack developer con interés en startups y productos innovadores.",
+    img: "valeria.jpg",
+  },
 ];
 
 // Coordenadas para las tarjetas arrastrables
