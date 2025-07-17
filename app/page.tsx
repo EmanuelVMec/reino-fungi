@@ -61,7 +61,7 @@ const TextParallaxVideoContent = ({
             <Image
               src={logoSrc}
               alt="Logo"
-              width={200}
+              width={300}
               height={200}
               className="h-12 md:h-28 mb-2"
             />
