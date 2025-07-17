@@ -59,12 +59,12 @@ const TextParallaxVideoContent = ({
           heading={heading}
           subheading={
             <Image
-              src={logoSrc}
-              alt="Logo"
-              width={300}
-              height={200}
-              className="h-12 md:h-28 mb-2"
-            />
+  src={logoSrc}
+  alt="Logo"
+  width={370}
+  height={100} // ajusta a la altura que quieras
+  className="mb-2"
+/>
           }
         />
       </div>
