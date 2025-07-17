@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FancyButton } from "./components/FiArrowUpRight"; // Ajusta si es necesario
+import { FancyButton } from "./components/FiArrowUpRight";
 import Image from "next/image";
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
 
 const IMG_PADDING = 12;
 
-// NUEVO COMPONENTE PARA VIDEO
+// COMPONENTE DE VIDEO CON TEXTO PARALLAX
 const TextParallaxVideoContent = ({
   videoSrc,
   logoSrc,
@@ -55,7 +55,18 @@ const TextParallaxVideoContent = ({
     <div style={{ paddingLeft: IMG_PADDING, paddingRight: IMG_PADDING }}>
       <div className="relative h-[150vh]">
         <StickyVideo videoSrc={videoSrc} />
-        <OverlayCopy heading={heading} subheading={<image src={logoSrc} className="h-12 md:h-110 mb-2" alt="Logo" />} />
+        <OverlayCopy
+          heading={heading}
+          subheading={
+            <Image
+              src={logoSrc}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="h-12 md:h-28 mb-2"
+            />
+          }
+        />
       </div>
       {children}
     </div>
@@ -94,8 +105,17 @@ const StickyVideo = ({ videoSrc }: { videoSrc: string }) => {
   );
 };
 
-// BLOQUE NORMAL CON IMAGEN
-const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
+const TextParallaxContent = ({
+  imgUrl,
+  subheading,
+  heading,
+  children,
+}: {
+  imgUrl: string;
+  subheading: React.ReactNode;
+  heading: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div style={{ paddingLeft: IMG_PADDING, paddingRight: IMG_PADDING }}>
       <div className="relative h-[150vh]">
@@ -107,7 +127,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
   );
 };
 
-const StickyImage = ({ imgUrl }) => {
+const StickyImage = ({ imgUrl }: { imgUrl: string }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -169,20 +189,19 @@ const OverlayCopy = ({
 const ExampleContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-  Additional content explaining the above card here
-</h2>
+      Información adicional sobre los hongos
+    </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Para tener mas informacion sobre los hongos por catalogos elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+        Para tener más información sobre los hongos, puedes revisar nuestros
+        catálogos. Quasi, blanditiis soluta eius quam modi aliquam quaerat odit
+        deleniti minima maiores voluptate est ut saepe accusantium maxime.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Learn more</FancyButton>
+      <FancyButton>Aprender más</FancyButton>
     </div>
   </div>
 );
@@ -190,20 +209,18 @@ const ExampleContent = () => (
 const ExampleContent2 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-  kkkkkkkkkkkk
-</h2>
+      Calidad y autenticidad
+    </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Learn more</FancyButton>
+      <FancyButton>Aprender más</FancyButton>
     </div>
   </div>
 );
@@ -211,20 +228,18 @@ const ExampleContent2 = () => (
 const ExampleContent3 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-  kkkkkkkkkkkk
-</h2>
+      Elegancia natural
+    </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Revisar el indice de la pagina adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+        Revisar el índice de la página para conocer más sobre hongos, su
+        clasificación y hábitat natural.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Learn more</FancyButton>
+      <FancyButton>Aprender más</FancyButton>
     </div>
   </div>
 );
