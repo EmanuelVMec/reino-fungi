@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState, MutableRefObject } from "react";
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
 
 // Datos de los estudiantes
 const students = [
@@ -94,7 +95,7 @@ export default function AcercaPage() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <div className="mb-4 h-16 w-16 rounded-full overflow-hidden">
-                <img
+                <Image
                   src={`/students/${student.img}`}
                   alt={student.name}
                   className="h-full w-full object-cover"

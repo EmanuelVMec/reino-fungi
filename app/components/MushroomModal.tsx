@@ -2,11 +2,11 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 interface Mushroom {
   name: string;
-  image?: string;       // permite el antiguo
-  images?: string[];    // nuevo array
+  image?: string | string[]; // ✅ acepta string o array
   description: string;
 }
 
@@ -19,9 +19,9 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
   const [idx, setIdx] = useState(0);
   if (!mushroom) return null;
 
-  /* Usa array si existe, si no crea uno con la única imagen */
-  const gallery = mushroom.images ?? (mushroom.image ? [mushroom.image] : []);
-  const total   = gallery.length;
+const gallery =
+  Array.isArray(mushroom.image) ? mushroom.image : (mushroom.image ? [mushroom.image] : []);
+  const total = gallery.length;
 
   const prev = () => setIdx((idx - 1 + total) % total);
   const next = () => setIdx((idx + 1) % total);
@@ -36,7 +36,7 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
         transition={{ duration: 0.35 }}
         className="fixed inset-0 z-50 flex items-center justify-center px-4"
       >
-        {/* backdrop */}
+        {/* Fondo con textura de ruido */}
         <div
           className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
           style={{
@@ -47,7 +47,7 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
           onClick={onClose}
         />
 
-        {/* modal */}
+        {/* Modal */}
         <motion.div
           key="modal"
           initial={{ opacity: 0, scale: 0.85, y: 80 }}
@@ -56,7 +56,7 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
           transition={{ duration: 0.45 }}
           className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-neutral-400 shadow-2xl bg-[#fefbf7]"
         >
-          {/* cerrar */}
+          {/* Botón cerrar */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-white text-2xl shadow-lg transition hover:scale-110 hover:bg-red-700"
@@ -64,13 +64,15 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
             ×
           </button>
 
-          {/* slider */}
+          {/* Imagen principal */}
           {total > 0 && (
             <div className="relative">
-              <img
+              <Image
                 src={gallery[idx]}
                 alt={mushroom.name}
-                className="h-72 w-full object-cover border-b border-neutral-300"
+                width={800}
+                height={300}
+                className="w-full h-72 object-cover border-b border-neutral-300"
               />
 
               {total > 1 && (
@@ -92,7 +94,7 @@ export default function MushroomModal({ mushroom, onClose }: ModalProps) {
             </div>
           )}
 
-          {/* contenido */}
+          {/* Contenido */}
           <div className="p-8 max-h-[65vh] overflow-y-auto space-y-5">
             <h2 className="text-3xl font-extrabold text-red-700 text-center">
               {mushroom.name}

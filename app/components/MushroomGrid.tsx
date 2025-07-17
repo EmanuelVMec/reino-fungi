@@ -1,5 +1,7 @@
 "use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import MushroomModal from "./MushroomModal";
 
 const mushrooms = [
@@ -180,10 +182,7 @@ const mushrooms = [
 {
   id: 7,
   name: "Laccaria laccata",
-  images: [                      
-    "/mushrooms/laccaria-laccata.jpg",
-    "/mushrooms/laccaria-laccata2.jpg",
-  ],
+  image: [ "/mushrooms/laccaria-laccata.jpg", "/mushrooms/laccaria-laccata2.jpg"],
   description: `
     <strong>Nombre común:</strong> Lacaria lacada, lakaria arrunt, pinpinella rosada, cogomelo lacado<br/><br/>
 
@@ -212,7 +211,7 @@ const mushrooms = [
 {
   id: 8, // Continuando la numeración
   name: "Panus neostrigosus",
-  images: [                      
+  image: [                      
     "/mushrooms/panus-neostrigosus.jpg",
     "/mushrooms/panus-neostrigosus2.jpg",
   ],
@@ -495,14 +494,24 @@ const mushrooms = [
 },
 ];
 /* Tarjeta individual de hongo */
+interface Mushroom {
+  id: number;
+  name: string;
+  image: string | string[];
+  description: string;
+}
+
 function MushroomCard({
   mushroom,
   onSelect,
 }: {
-  mushroom: any;
-  onSelect: (m: any) => void;
+  mushroom: Mushroom;
+  onSelect: (m: Mushroom) => void;
 }) {
-  const gallery = mushroom.images ?? [mushroom.image];
+  const gallery = Array.isArray(mushroom.image)
+    ? mushroom.image
+    : [mushroom.image];
+
   const [idx, setIdx] = useState(0);
   const total = gallery.length;
 
@@ -514,33 +523,36 @@ function MushroomCard({
       className="relative cursor-pointer transition-transform hover:scale-105"
     >
       {/* Imagen visible */}
-      <img
+      <Image
         src={gallery[idx]}
         alt={mushroom.name}
+        width={600}
+        height={400}
         className="h-60 w-full rounded-xl object-cover shadow-lg"
       />
 
-      {/* Botón verde grande si hay más de una foto */}
+      {/* Botón verde si hay varias fotos */}
       {total > 1 && (
         <button
           onClick={(e) => {
-            e.stopPropagation(); // evita abrir el modal
+            e.stopPropagation();
             nextImg();
           }}
-          className="absolute bottom-3 right-3 flex h-10 w-10 items-center justify-center rounded-full bg-green-500 text-white text-xl shadow-lg hover:bg-green-600 transition"
+          className="absolute bottom-3 right-3 flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-white text-xl shadow-xl hover:bg-green-700 transition"
         >
           ↻
         </button>
       )}
 
-      <h3 className="mt-3 text-center text-xl font-semibold">{mushroom.name}</h3>
+      <h3 className="mt-3 text-center text-xl font-semibold">
+        {mushroom.name}
+      </h3>
     </div>
   );
 }
 
-/* ───── Grid principal ───── */
 export default function MushroomGrid() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<Mushroom | null>(null);
 
   return (
     <div className="p-6">

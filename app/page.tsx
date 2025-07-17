@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FancyButton } from "./components/FiArrowUpRight"; // Ajusta si es necesario
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ const TextParallaxVideoContent = ({
     <div style={{ paddingLeft: IMG_PADDING, paddingRight: IMG_PADDING }}>
       <div className="relative h-[150vh]">
         <StickyVideo videoSrc={videoSrc} />
-        <OverlayCopy heading={heading} subheading={<img src={logoSrc} className="h-12 md:h-110 mb-2" alt="Logo" />} />
+        <OverlayCopy heading={heading} subheading={<image src={logoSrc} className="h-12 md:h-110 mb-2" alt="Logo" />} />
       </div>
       {children}
     </div>
