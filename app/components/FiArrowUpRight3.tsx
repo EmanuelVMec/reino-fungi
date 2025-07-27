@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
-export const FancyButton1 = ({ children }: { children: string }) => {
+export const FancyButton3 = ({ children }: { children: string }) => {
   const btnRef = useRef<HTMLButtonElement | null>(null);
   const spanRef = useRef<HTMLSpanElement | null>(null);
   const router = useRouter();
@@ -35,7 +35,7 @@ export const FancyButton1 = ({ children }: { children: string }) => {
   }, []);
 
   const handleClick = () => {
-    router.push("/pricing"); // ✅ Ruta correcta según tu carpeta
+    router.push("/acerca"); // ✅ Ruta correcta según tu carpeta
   };
 
   return (

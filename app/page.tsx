@@ -2,7 +2,9 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FancyButton } from "./components/FiArrowUpRight";
+import { FancyButton1 } from "./components/FiArrowUpRight";
+import { FancyButton2 } from "./components/FiArrowUpRight2";
+import { FancyButton3 } from "./components/FiArrowUpRight3";
 import Image from "next/image";
 
 export default function Home() {
@@ -201,7 +203,7 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Aprender más</FancyButton>
+      <FancyButton1>Ver más información</FancyButton1>
     </div>
   </div>
 );
@@ -220,7 +222,7 @@ const ExampleContent2 = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Aprender más</FancyButton>
+      <FancyButton2>Ver más información</FancyButton2>
     </div>
   </div>
 );
@@ -239,7 +241,7 @@ const ExampleContent3 = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <FancyButton>Aprender más</FancyButton>
+      <FancyButton3>Ver más información</FancyButton3>
     </div>
   </div>
 );
