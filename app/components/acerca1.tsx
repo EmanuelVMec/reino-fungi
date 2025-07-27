@@ -142,7 +142,7 @@ export default function AcercaPage() {
     <div className="min-h-screen bg-white">
       {/* Sección arrastrable */}
       <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
-        <img
+        <Image
           src="/uteq.png"
           alt="UTEQ Logo"
           className="absolute inset-0 m-auto z-0 opacity-70 w-[60vw] max-w-[500px] pointer-events-none"
