@@ -83,44 +83,44 @@ const DragCards = () => {
 // 🔴 Datos
 const students = [
   {
-    name: "Ana García",
+    name: "Cristian Lucas",
     description: "Apasionada por la inteligencia artificial y el diseño de interfaces.",
-    img: "ana.jpg",
+    img: "Uno.jpg",
   },
   {
-    name: "Luis Rodríguez",
-    description: "Especialista en backend con experiencia en Node.js y bases de datos.",
-    img: "luis.jpg",
+    name: "Mayra Palacios",
+    description: "Estudiante de biología con interés en laboratorio jajajaja.",
+    img: "Dos.jpg",
   },
   {
-    name: "María López",
-    description: "Diseñadora UX/UI enfocada en accesibilidad y experiencia de usuario.",
-    img: "maria.jpg",
+    name: "Camila Vinces",
+    description: "Futura bióloga entusiasmada en microbiología con interés en área de laboratorio, impulsada por las herramientas biotecnológicas.",
+    img: "Tres.jpg",
   },
   {
-    name: "Carlos Fernández",
-    description: "Desarrollador frontend con amor por React y animaciones interactivas.",
-    img: "carlos.jpg",
+    name: "Eduviges Cagua",
+    description: "Estudiante de Biología, apasionada de la Mastofauna en busca de aventuras salvajes 🤭.",
+    img: "Cuatro.jpg",
   },
   {
-    name: "Sofía Martínez",
+    name: "Fabiana Vargas",
     description: "Ingeniera de datos y entusiasta del aprendizaje automático.",
-    img: "sofia.jpg",
+    img: "Cinco.jpg",
   },
   {
-    name: "Jorge Ramírez",
-    description: "Creador de contenido educativo sobre programación y tecnología.",
-    img: "jorge.jpg",
+    name: "Thalena Lamorú",
+    description: "Estudiante de biología con gran interés en neurociencias y el estudio del cuerpo humano.",
+    img: "Seis.jpg",
   },
   {
-    name: "Valeria Torres",
+    name: "Elena Medina",
     description: "Full-stack developer con interés en startups y productos innovadores.",
-    img: "valeria.jpg",
+    img: "Siete.jpg",
   },
   {
-    name: "Integrante ultimo",
+    name: "Vivian Varela",
     description: "Full-stack developer con interés en startups y productos innovadores.",
-    img: "valeria.jpg",
+    img: "Ocho.jpg",
   },
 ];
 
@@ -128,12 +128,16 @@ const studentsImages = [
   { file: "2.jpg", top: "20%", left: "25%", rotate: "6deg", size: "w-36 md:w-56" },
   { file: "imagen.jpg", top: "45%", left: "60%", rotate: "12deg", size: "w-24 md:w-48" },
   { file: "images (1).jpg", top: "20%", left: "40%", rotate: "-6deg", size: "w-52 md:w-80" },
-  { file: "images.jpg", top: "50%", left: "40%", rotate: "8deg", size: "w-48 md:w-77" },
+  { file: "images.jpg", top: "50%", left: "40%", rotate: "8deg", size: "w-48 md:w-90" }, //YA ESTA
   { file: "trabajo.jpg", top: "20%", left: "65%", rotate: "18deg", size: "w-40 md:w-64" },
-  { file: "ana.jpg", top: "35%", left: "55%", rotate: "-3deg", size: "w-24 md:w-48" },
-  { file: "luis.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-36 md:w-63" },
-  { file: "maria.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-36 md:w-60" },
-  { file: "maria.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-36 md:w-70" },
+  { file: "Uno.jpg", top: "30%", left: "20%", rotate: "5deg", size: "w-36 md:w-50" },//FOTOS DE ESTUDIANTES
+  { file: "Dos.jpg", top: "30%", left: "20%", rotate: "5deg", size: "w-36 md:w-50" },
+  { file: "Tres.jpg", top: "35%", left: "55%", rotate: "-3deg", size: "w-24 md:w-50" },
+  { file: "Cuatro.jpg", top: "35%", left: "59%", rotate: "-3deg", size: "w-24 md:w-48" },
+  { file: "Cinco.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-36 md:w-41" },
+  { file: "Seis.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-36 md:w-35" },
+  { file: "Siete.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-24 md:w-35" },
+  { file: "Ocho.jpg", top: "30%", left: "35%", rotate: "10deg", size: "w-24 md:w-39" },
 ];
 
 // 🟡 Componente principal
@@ -145,6 +149,8 @@ export default function AcercaPage() {
         <Image
           src="/uteq.png"
           alt="UTEQ Logo"
+          width={500}  // Ancho en píxeles
+          height={300} // Alto en píxeles
           className="absolute inset-0 m-auto z-0 opacity-70 w-[60vw] max-w-[500px] pointer-events-none"
         />
         <DragCards />
@@ -165,7 +171,7 @@ export default function AcercaPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <div className="mb-4 h-16 w-16 rounded-full overflow-hidden">
+              <div className="mb-4 h-21 w-21 rounded-full overflow-hidden">
                 <Image
                   src={`/students/${student.img}`}
                   alt={student.name}
