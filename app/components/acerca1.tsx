@@ -84,7 +84,7 @@ const DragCards = () => {
 const students = [
   {
     name: "Cristian Lucas",
-    description: "Apasionada por la inteligencia artificial y el diseño de interfaces.",
+    description: "Estudiante apasionado por la biología marina, decidido a explorar y proteger los secretos del océano.",
     img: "Uno.jpg",
   },
   {
