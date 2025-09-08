@@ -22,16 +22,16 @@ export default function Home() {
       {/* OTROS BLOQUES CON IMÁGENES */}
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Quality"
-        heading="Never compromise."
+        subheading="Cualidad"
+        heading="Trabajo Grupal."
       >
         <ExampleContent2 />
       </TextParallaxContent>
 
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Modern"
-        heading="Dress for the best."
+        imgUrl="https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading="Indice"
+        heading="Índice de Shannon-Wiener (H’)"
       >
         <ExampleContent3 />
       </TextParallaxContent>
@@ -191,17 +191,17 @@ const OverlayCopy = ({
 const ExampleContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-      Información adicional sobre los hongos
+      Información que necesitas sobre los hongos
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Para tener más información sobre los hongos, puedes revisar nuestros
-        catálogos. Quasi, blanditiis soluta eius quam modi aliquam quaerat odit
-        deleniti minima maiores voluptate est ut saepe accusantium maxime.
+        🍄 Explora el mundo de los Hongos
+Descubre la gran diversidad de hongos que existen: comestibles, medicinales y silvestres.
+ Aprende a identificarlos, conoce sus propiedades y adéntrate en este fascinante 
+ reino natural.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
+        👉 Presiona el botón para acceder al Catálogo de Hongos y explorar toda la colección disponible.
       </p>
       <FancyButton1>Ver más información</FancyButton1>
     </div>
@@ -211,16 +211,18 @@ const ExampleContent = () => (
 const ExampleContent2 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-      Calidad y autenticidad
+      Calidad y autenticidad de investigación
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima.
+        🍄 Nosotros
+Somos un grupo de estudiantes apasionados por el mundo de los hongos. 
+Nos gusta explorarlos, aprender a identificarlos y armar un catálogo 
+sencillo donde cualquiera pueda conocer más sobre ellos.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
+        👉 Presiona el botón para descubrir sobre nosotros, 
+        cómo hacemos este trabajo y quiénes formamos parte del proyecto.
       </p>
       <FancyButton2>Ver más información</FancyButton2>
     </div>
@@ -230,16 +232,12 @@ const ExampleContent2 = () => (
 const ExampleContent3 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold text-red-500 md:col-span-4">
-      Elegancia natural
+      Indice explicativo
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
         Revisar el índice de la página para conocer más sobre hongos, su
         clasificación y hábitat natural.
-      </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
       </p>
       <FancyButton3>Ver más información</FancyButton3>
     </div>

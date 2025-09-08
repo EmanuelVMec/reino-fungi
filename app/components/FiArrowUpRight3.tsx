@@ -35,7 +35,7 @@ export const FancyButton3 = ({ children }: { children: string }) => {
   }, []);
 
   const handleClick = () => {
-    router.push("/acerca"); // ✅ Ruta correcta según tu carpeta
+    router.push("/indice"); // ✅ Ruta correcta según tu carpeta
   };
 
   return (
