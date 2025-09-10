@@ -15,11 +15,11 @@ export const Footer = () => {
   className="inline-flex items-center"
 >
   <Image
-    src="/GrainWave.png"
+    src="/GWSICO.png"
     alt="GrainWave Logo"
-    width={270}
+    width={240}
     height={50}
-    className="h-55"
+    className="h-50"
   />
 </Link>
           <div className="mt--1 lg:max-w-sm">

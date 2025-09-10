@@ -492,6 +492,256 @@ const mushrooms = [
     Bosques húmedos de coníferas en zonas templadas y montañosas. Presente en Europa, América del Norte, Asia y ocasionalmente Sudamérica. Fructifica en otoño e invierno, resistiendo heladas leves. Indicador de bosques maduros con alta humedad y materia orgánica en descomposición.
   `,
 },
+{
+  id: 18,
+  name: "Lepiota atrodisca",
+  image: "/mushrooms/Lepiota.jpg",
+  description: `
+    <strong>Nombre común:</strong> Parasol oscuro<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Agaricales</em><br/>
+    Familia: <em>Agaricaceae</em><br/>
+    Género: <em>Lepiota</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Presenta color blanco-beige, superficie seca, cubierta por finas escamas negruzcas menos densas hacia el margen, con la carne muy delgada. Láminas: libres, blancas, con lamelulas. Su superficie es blanca, casi glabra en el ápice, fibrilosa hacia abajo. Velo blanquecino membranoso, delgado y frágil formando un anillo superior, a menudo con margen grisáceo.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Píleo: de 1.5 a 4 cm de ancho; convexo, se puede expandir hasta casi plano, ligeramente umbonado. Estípite: 2-8 cm de largo, delgado, frágil.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Tierra húmeda.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Hojarasca de bosques. Se encuentra principalmente en zonas bajas del Noroeste del Pacífico. Suele fructificar después de lluvias.<br/><br/>    
+  `,
+},
+{
+  id: 19,
+  name: "Trametes villosa",
+  image: "/mushrooms/Trametes2.jpg",
+  description: `
+    <strong>Nombre común:</strong> <br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Polyporales</em><br/>
+    Familia: <em>Polyporaceae</em><br/>
+    Género: <em>Trametes</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Este hongo se caracteriza por tener una estructura semicircular, posee un color grisáceo o blanquecino, en su sombrero tiene muchos poros de color blanquecino, pero a medida que el hongo crece estos se van tornando de un color marrón.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    El sombrero generalmente mide entre 5 a 10 cm de diámetro.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Crece en tejidos muertos o en descomposición, principalmente en madera, corteza, ramas u hojas.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Este hongo se encuentra en bosques templados y subtropicales, creciendo sobre troncos, raíces o restos de madera en descomposición. Y se distribuye por varios países de América central y del Sur.
+  `,
+},
+{
+  id: 20,
+  name: "Leucocoprinus ianthinus",
+  image: "/mushrooms/ianthinus.jpg",
+  description: `
+    <strong>Nombre común:</strong> Hongo púrpura de maceta<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Agaricales</em><br/>
+    Familia: <em>Agaricaceae</em><br/>
+    Género: <em>Leucocoprinus</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Sombrero de color blanco a amarillento con un disco central oscuro que puede variar de violeta a negro, y un pie con una capa fibrilosa y violeta en la base, de donde surgen el anillo y la esporada de color blanco a lila pálido. El margen del sombrero es estriado y suele curvarse hacia adentro con la edad, mientras que las láminas son libres, apiñadas y blancas. Es un hongo tóxico que causa síntomas gastrointestinales y se encuentra en lugares con suelo alterado.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Su tamaño es de 2.5 a 5 cm de diámetro.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Crece preferentemente en sustratos orgánicos en descomposición, como suelos de macetas, invernaderos, humus de bosque, y pilas de compost o aserrín.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Distribución global, originándose en regiones tropicales y subtropicales, pero dispersándose fácilmente a través de plantas y compostaje a climas templados.
+  `,
+},
+{
+  id: 21,
+  name: "Stereum rugosum",
+  image: "/mushrooms/rugosum.jpg",
+  description: `
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Russulales</em><br/>
+    Familia: <em>Stereaceae</em><br/>
+    Género: <em>Stereum</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Cuerpo fructífero coriáceo, rugoso y tuberculado, que forma costras sobre la madera. Forma rugosa irregular. Crece en ramas y troncos, puede ser perenne, y aunque no es comestible, es un importante agente de descomposición de la madera.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Varían.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Hongo saprofito que aparece sobre madera muerta en descomposición de caducifolios, especialmente en ramas caídas y troncos, de los que se alimenta y que utiliza como sustrato para su desarrollo.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Bosques húmedos de diversas partes del mundo.
+  `,
+},
+{
+  id: 22,
+  name: "Lentinus crinitus",
+  image: "/mushrooms/crinitus.jpg",
+  description: `
+    <strong>Nombre común:</strong> Hongo de pelo o melena de león del bosque<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Polyporales</em><br/>
+    Familia: <em>Polyporaceae</em><br/>
+    Género: <em>Lentinus</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Es un hongo con forma de embudo profundo, con superficie vellosa y color que va del marrón amarillento al marrón grisáceo. Posee láminas decurrentes ocreo pálido con bordes dentados y un estipe (tallo) con escamas amarillentas.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    El sombrero generalmente mide entre 1.2 a 4.2 cm de diámetro.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Generalmente crece sobre madera muerta o en descomposición.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Este hongo se encuentra en climas cálidos y húmedos de América, África y Asia. Su distribución abarca desde altitudes bajas hasta los 2800 metros y es más frecuente durante las temporadas de lluvias.
+  `,
+},
+{
+  id: 23,
+  name: "Entoloma rhodopolium",
+  image: "/mushrooms/entoloma.jpg",
+  description: `
+    <strong>Nombre común:</strong> Entoloma rosa grisáceo<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Agaricales</em><br/>
+    Familia: <em>Entolomataceae</em><br/>
+    Género: <em>Entoloma</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Hongo basidiomiceto venenoso que crece en bosques de hojas caducas durante el verano y otoño. Posee un sombrero de color gris a canela, de forma convexa a umbonada, que puede alcanzar hasta 20 cm de ancho. Sus láminas son de color claro al principio, volviéndose rosadas con el depósito de esporas. El tallo es blanquecino y la carne firme. La especie es conocida por causar síntomas gastrointestinales y contiene muscarina, un componente tóxico.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Hasta 20 centímetros de ancho en algunas descripciones, aunque otras fuentes indican que es más bien un hongo de tamaño medio, con un sombrero de hasta 10 cm. El tallo puede alcanzar hasta 13 centímetros de largo y 2 centímetros de grosor.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Árboles y lugares húmedos.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Se encuentra en bosques de hoja caduca, especialmente en lugares con abundantes hojas secas.
+  `,
+},
+{
+  id: 24,
+  name: "Agrocybe pediades",
+  image: "/mushrooms/pediades.jpg",
+  description: `
+    <strong>Nombre común:</strong> Hongo gorra de campo<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Agaricales</em><br/>
+    Familia: <em>Strophariaceae</em><br/>
+    Género: <em>Agrocybe</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Es un hongo pequeño que se caracteriza por su color crema a amarillo ocreo, que se aplana con la edad y puede volverse pegajoso con la humedad. Su pie es delgado, sin anillo, con rastros de un velo parcial.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Sombrero pequeño que mide entre 1-3 cm de diámetro.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    No requiere un sustrato específico para su crecimiento, ya que se alimenta de material orgánico en descomposición.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Este hongo crece en pastizales, céspedes, jardines y otros lugares herbáceos, a menudo sobre suelos ricos o fertilizados con estiércol. Se encuentra distribuido en diferentes partes del mundo, incluyendo Norteamérica y Europa.
+  `,
+},
+{
+  id: 25,
+  name: "Panaeolus papilionaceus",
+  image: "/mushrooms/panaeolo.jpg",
+  description: `
+    <strong>Nombre común:</strong> Panaeolo mariposa<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Agaricales</em><br/>
+    Familia: <em>Panaeolus</em><br/>
+    Género: <em>Panaeolus</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Este hongo se caracteriza por tener forma de campana, un color grisáceo a marrón claro, a veces con tonos más oscuros en el centro. Láminas estrechas y numerosas.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    El sombrero generalmente mide entre 2 a 5 cm de diámetro.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Crece específicamente en estiércol de vacas y caballos.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Este hongo se encuentra en pastizales. Su distribución es cosmopolita, abarcando climas cálidos en varias regiones del mundo, incluyendo Norteamérica, el Caribe, Sudamérica (Chile, Colombia, Uruguay), Europa, África, Asia (China, Irán, Filipinas) y Oceanía.
+  `,
+},
+{
+  id: 26,
+  name: "Auricularia nigricans",
+  image: "/mushrooms/nigricans.jpg",
+  description: `
+    <strong>Nombre común:</strong> Oreja de viejita<br/><br/>
+
+    <strong>Taxonomía:</strong><br/>
+    Reino: <em>Fungi</em><br/>
+    Filo: <em>Basidiomycota</em><br/>
+    Clase: <em>Agaricomycetes</em><br/>
+    Orden: <em>Auriculariales</em><br/>
+    Familia: <em>Auriculariaceae</em><br/>
+    Género: <em>Auricularia</em><br/><br/>
+
+    <strong>Diagnóstico:</strong><br/>
+    Este hongo se caracteriza por tener una forma auriculada con una coloración gris ceniza a marrón amarillento con una textura vellosa en la parte superior y lisa en la parte inferior.<br/><br/>
+
+    <strong>Dimensiones:</strong><br/>
+    Puede alcanzar entre los 2-8 cm de diámetro, aunque puede ser mayor en condiciones favorables.<br/><br/>
+
+    <strong>Sustrato:</strong><br/>
+    Crece en madera muerta de árboles de hoja ancha.<br/><br/>
+
+    <strong>Hábitat y distribución:</strong><br/>
+    Este hongo se encuentra en diversas regiones templadas y tropicales del mundo, incluyendo América del Sur (como Argentina), América del Norte (Sur de EE.UU. y el Caribe) y Asia.
+  `,
+},
 ];
 /* Tarjeta individual de hongo */
 interface Mushroom {
